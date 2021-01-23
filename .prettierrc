@@ -1,0 +1,5 @@
+// 修改格式化规则，自己加的
+{
+    "semi": false,
+    "singleQuote": true
+}
