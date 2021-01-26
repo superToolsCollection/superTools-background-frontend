@@ -14,6 +14,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 禁用语法规则自己加的
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'prettier/prettier': 'off'
   }
 }
