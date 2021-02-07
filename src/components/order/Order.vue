@@ -125,7 +125,7 @@ export default {
     // 获取订单列表数据 这里有问题？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
     async getOrderList() {
       const { data: res } = await this.$http.get('orders', { params: this.queryInfo })
-      // if (res.meta.status !== 200) return this.$message.error('获取订单列表失败！')
+      if (res.meta.status !== 200) return this.$message.error('获取订单列表失败！')
       console.log(res)
       this.orderList = res.data.goods
       this.total = res.data.total
