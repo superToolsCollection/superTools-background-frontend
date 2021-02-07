@@ -3,6 +3,9 @@ import Vue from 'vue'
 import { Button, Form, FormItem, Input, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Select, Option, Cascader, Alert, Tabs, TabPane, Step, Steps, CheckboxGroup, Checkbox, Upload } from 'element-ui'
 // import { Form, FormItem } from 'element-ui'
 // import { Input } from 'element-ui'
+// 导入时间线组件
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -39,5 +42,8 @@ Vue.use(Steps)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
+
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
